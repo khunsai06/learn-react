@@ -29,7 +29,7 @@ const Users = () => {
   }, []);
 
   return (
-    <div style={{ paddingLeft: '1rem' }}>
+    <>
       <h1>users</h1>
       {error ? (
         <h4>{error}</h4>
@@ -40,7 +40,7 @@ const Users = () => {
           return <h4 key={index}>{name}</h4>;
         })
       )}
-    </div>
+    </>
   );
 };
 
